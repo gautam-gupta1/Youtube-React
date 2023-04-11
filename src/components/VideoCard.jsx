@@ -9,7 +9,7 @@ const VideoCard = ({ videoInfo }) => {
 
   return (
     <div  className="video-container">
-    <a
+    <a className="videoLink"
       href={`https://www.youtube.com/watch?v=${id}`}
       target="_blank"
      

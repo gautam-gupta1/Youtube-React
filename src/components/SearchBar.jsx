@@ -1,6 +1,6 @@
 import React, { useCallback, useRef
    , useState } from "react";
-import searchPng from '/src/assets/icons8-search-32.png'
+import searchIcon from '../assets/searchIcon.png'
 import {debounce} from 'lodash'
 const SearchBar = ({onSearch}) =>{
      const [inputText, setInputText] = useState("");
@@ -26,7 +26,7 @@ const SearchBar = ({onSearch}) =>{
          <header>
       <input type="text" ref={inputBarRef} id="searchBar" value={inputText} onChange={handleTyping} onClick={handleFocus}/>
       <button id="searchButton" onClick={handleSearchButtonClick}>
-         <img scr={searchPng} alt="Search"/>
+         <img src={searchIcon} alt="Search"/>
       </button>
          </header>
       </div>
