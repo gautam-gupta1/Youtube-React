@@ -1,0 +1,134 @@
+
+.search-container {
+  font-family: RobotoRegular;
+  display: flex;
+  height: 50px;
+  margin-bottom: 20px;
+  justify-content: space-around;
+  background-color: rgb(22, 22, 71);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  width: 250px;
+  min-width: 250px;
+  word-wrap: break-word;
+}
+
+.videoThumbnail {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100px;
+}
+
+.videoTitle {
+  color: black;
+  font-family: RobotoRegular;
+  font-size: medium;
+  margin: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.videoDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  color: grey;
+  width: 100%;
+}
+
+.videoDetails > * {
+  margin: 2px 0;
+}
+
+.videoDescription {
+  margin-top: 0px;
+  padding-left: 1px;
+  padding-right: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+header{
+  display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   max-width: 700px;
+   height: 100%;
+   background: rgba(255,255,255,0.2);
+   /* border-radius: 60px; */
+
+}
+
+#searchBar {
+  background: transparent;
+  flex: 1;
+  border: 0;
+  /* outline: none; */
+  padding: 20px 20px;
+  font-size: 20px;
+  color: #cac7ff;
+}
+
+#searchBar::placeholder {
+  color: #cac7ff;
+}
+
+#searchButton {
+  background: transparent;
+  border: 0;
+  height: 90%;
+  font-size: x-large;
+ 
+  background-color: rgb(255, 255, 255, 0.1);
+  outline: none;
+}
+
+#searchButton:hover {
+  background-color: rgb(255, 255, 255, 0.6);
+}
+
+#searchResults {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-right: 25px;
+}
+
+@media (max-width: 1000px) {
+  #searchResults {
+    margin-right: 2px;
+    margin-bottom: 4px;
+  }
+}
+
+@media (max-width: 700px) {
+  .video-container {
+    width: 80%;
+  }
+  .videoThumbnail {
+    height: 200px;
+  }
+
+  .videoTitle {
+    font-size: x-large;
+  }
+
+  .videoAuthor {
+    font-size: large;
+  }
+}
